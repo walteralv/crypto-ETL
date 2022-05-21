@@ -1,0 +1,8 @@
+/venv
+.env
+/postgres-db-volume/*
+/logs/*
+/crypto-data/*
+/secrets/*
+/plugins/*
+
