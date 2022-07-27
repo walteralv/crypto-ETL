@@ -60,7 +60,9 @@ def extract():
     return data_raw
 
 def main():
-    """ """
+    """
+    The main function runs the program.
+    """
     # extract
     print(cfg.API_KEYS)
     data_raw = extract()
@@ -73,7 +75,7 @@ def main():
 def ahhhh():
     print(f"AHHHHHHHHHHH {datetime.now()} AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
 
-#     # load
-# if __name__ == '__main__':
-#     main()
+    # load
+if __name__ == '__main__':
+    main()
 

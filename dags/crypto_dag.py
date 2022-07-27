@@ -4,7 +4,7 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 
-from crypto_etl import ahhhh, main
+from extract import ahhhh, main
 
 now=datetime.now()
 default_args = {
@@ -23,6 +23,7 @@ dag = DAG(
     default_args=default_args,
     description='Get crypto data and save as json file',
     schedule_interval= timedelta(minutes=1),
+    catchup=False,
     tags=['extract']
 )
 
